@@ -1,0 +1,12 @@
+function myReplace(str, before, after) {
+
+    let regEx = new RegExp(before,'i');
+
+    let regExCap=/^[A-Z]/;
+
+    if(regExCap.test(str.match(regEx))){
+        after=after.replace(after.charAt(0),after.charAt(0).toUpperCase());
+    }
+
+    return str.replace(regEx,after);
+}

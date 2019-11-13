@@ -1,0 +1,25 @@
+function translatePigLatin (str){
+
+    let regEx=/^[aeiou]/;
+        
+    if(regEx.test(str)){
+        str=str.concat('way');
+        return str;
+    }
+
+    str=str.replace(/([^aeiou]*)([\w]*)/,"$2$1").concat('ay');
+
+    return str;
+}
+
+
+translatePigLatin("california");
+//should return "aliforniacay".
+translatePigLatin("paragraphs")
+//should return "aragraphspay".
+translatePigLatin("glove")
+//should return "oveglay".
+translatePigLatin("algorithm")
+//should return "algorithmway".
+translatePigLatin("eight")
+//should return "eightway".

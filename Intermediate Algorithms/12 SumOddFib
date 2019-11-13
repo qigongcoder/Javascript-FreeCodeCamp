@@ -1,0 +1,24 @@
+
+function sumFibs(num) {
+
+    if(num==0){return 0};
+    if(num==1){return 1};
+    if(num==2){return 1};
+
+    let pre=1;
+    let curr=1;
+    let next=2;
+    let sumodd=1;
+
+    while(curr<=num){
+        if(curr%2){
+            sumodd+=curr;
+        }
+        next=pre+curr;
+        pre=curr;
+        curr=next;
+    }   
+
+    return (sumodd);
+  
+}

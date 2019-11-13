@@ -1,0 +1,19 @@
+function sumAll(arr) {
+    let x=arr[0];
+    let y=arr[1];
+    if(y<x){
+        x=arr[1];
+        y=arr[0];
+    }
+
+    let sum=0;
+    
+    while(x<y){
+        sum=sum+x;
+        x++;
+    }
+
+  return sum+y;
+}
+
+sumAll([1, 4]);

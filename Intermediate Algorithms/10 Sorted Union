@@ -1,0 +1,27 @@
+function uniteUnique(arr) {
+  let newArgs=Array.prototype.slice.call(arguments).toString().split(',');
+
+  let numArgs=[];
+  function str2num(x,i){
+    numArgs[i]=parseInt(x,10);
+  }
+  newArgs.forEach(str2num);
+
+  function remove(arr){
+    let i=0;
+    while(i<arr.length){
+      if(i!=arr.lastIndexOf(arr[i])){
+        arr.splice(arr.lastIndexOf(arr[i]),1);
+        i--;
+      }
+    i++;
+    }
+  }
+
+  remove(numArgs);
+  
+  return numArgs;
+
+}
+
+
