@@ -1,3 +1,8 @@
+/*
+Convert a string to spinal case.
+Spinal case is all-lowercase-words-joined-by-dashes.
+*/
+
 
 let Str1='This Is Spinal Tap';
 let Str2 ="thisIsSpinalTap";
