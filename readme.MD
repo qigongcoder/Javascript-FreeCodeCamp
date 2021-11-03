@@ -5,16 +5,17 @@ The link to the syllabus is here [https://www.freecodecamp.org/learn/javascript-
 
 
 ### Algorithms and Data Structures Projects
-*'This is it — time to put your new JavaScript skills to work. These projects are similar to the algorithm scripting challenges you've done before – just much more difficult.
 
-Complete these 5 JavaScript projects to earn the JavaScript Algorithms and Data Structures certification.'*
+*'This is it — time to put your new JavaScript skills to work. These projects are similar to the algorithm scripting challenges you've done before – just much more difficult.*
+
+*Complete these 5 JavaScript projects to earn the JavaScript Algorithms and Data Structures certification.'*
 
 
 ### Functional Programming Challenges
 
-*'Functional Programming is another popular approach to software development. In Functional Programming, code is organized into smaller, basic functions that can be combined to build complex programs.
+*'Functional Programming is another popular approach to software development. In Functional Programming, code is organized into smaller, basic functions that can be combined to build complex programs.*
 
-In this course, you'll learn the core concepts of Functional Programming including pure functions, how to avoid mutations, and how to write cleaner code with methods like .map() and .filter().'*
+*In this course, you'll learn the core concepts of Functional Programming including pure functions, how to avoid mutations, and how to write cleaner code with methods like .map() and .filter().'*
 
 
 ### Intermediate Algorithm Challenges
