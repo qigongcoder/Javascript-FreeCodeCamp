@@ -13,7 +13,7 @@ The link to the syllabus is here [https://www.freecodecamp.org/learn/javascript-
 
 
 
-## Medium Challenges
+## Intermediate Challenges
 ### Algorithm Scripting Challenges
 
 *'Now that you know the basics of algorithmic thinking and Functional Programming, test your skills with the Intermediate Algorithm Scripting challenges.'*
