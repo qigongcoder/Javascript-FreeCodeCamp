@@ -17,17 +17,11 @@ function telephoneCheck(str) {
   let arr = str.split("");
   let uni=[];
 
-  console.log(str);
-
-  //Converts to unicode
   arr.forEach(char_to_unicode);
   function char_to_unicode(item, index) {
     uni.push(item.charCodeAt(0))
   }
 
-  console.log(uni);
-
-  //Counts number of digits
   let num_of_num=0;
   uni.forEach(count_num);
   function count_num(item, index) {
@@ -36,39 +30,31 @@ function telephoneCheck(str) {
     }
   }
 
-  //Excludes numbers with less than 10 or more than 11 digits.
   if(!(num_of_num == 10 || num_of_num ==11)){
     res=false;
-    console.log("34 fail");
   }
 
   if(num_of_num == 11 && uni[0]!=49){
     res=false;
-    console.log("39 fail");
   }
 
-  //checking for brackets
   let open_b=uni.findIndex(check_open_brack);
   let close_b=uni.findIndex(check_close_brack);
 
   if(open_b!=-1 && close_b==-1){
     res=false;
-    console.log("48 fail");
   }
 
   if(open_b!=-1 && close_b!=-1 && close_b<open_b){
     res=false;
-    console.log("53 fail");
   }
 
   if(open_b!=-1 && close_b!=-1 && close_b>6){
     res=false;
-    console.log("58 fail");
   }
 
   if(close_b!=-1 && open_b==-1){
     res=false;
-    console.log("63 fail");
   }
 
   function check_open_brack(val){
@@ -79,8 +65,6 @@ function telephoneCheck(str) {
     if(val==41)
       return true;
   }
-
-  //checking for non allowed values
 
   let bad_val=uni.findIndex(check_for_bad_val);
   function check_for_bad_val(val){
@@ -106,10 +90,8 @@ function telephoneCheck(str) {
 
   if (bad_val!=-1){
     res=false;
-    console.log("100 fail");
   }
 
-  console.log(res);
   return res;
 
 }
@@ -120,92 +102,3 @@ telephoneCheck("14567894444");
 telephoneCheck("1 456 789 4444");
 
 
-
-
-/*
-console.log("555-555-5555 should return a boolean");
-telephoneCheck("555-555-5555");
-
-console.log("1 555-555-5555 should return true");
-telephoneCheck("1 555-555-5555");
-
-console.log("1 (555) 555-5555 should return true");
-telephoneCheck("1 (555) 555-5555");
-
-console.log("5555555555 should return true");
-telephoneCheck("5555555555");
-
-console.log("555-555-5555 should return true");
-telephoneCheck("555-555-5555");
-
-
-console.log("(555)555-5555 should return true");
-telephoneCheck("(555)555-5555");
-
-
-console.log("1(555)555-5555 should return true");
-telephoneCheck("1(555)555-5555");  
-
-
-console.log("555-5555 should return false");
-telephoneCheck("555-5555");  
-
-
-console.log("5555555 should return false");
-telephoneCheck("5555555"); 
-
-
-console.log("1 555)555-5555 should return false");
-telephoneCheck("1 555)555-5555"); 
-
-console.log("1 555 555 5555 should return true");
-telephoneCheck("1 555 555 5555"); 
-
-console.log("1 456 789 4444 should return true");
-telephoneCheck("1 456 789 4444");  
-
-console.log("123**&!!asdf# should return false");
-telephoneCheck("123**&!!asdf#"); 
-
-console.log("55555555 should return false");
-telephoneCheck("55555555");  
-
-console.log("(6054756961) should return false");
-telephoneCheck("(6054756961)");
-
-console.log("2 (757) 622-7382 should return false");
-telephoneCheck("2 (757) 622-7382"); 
-
-console.log("0 (757) 622-7382 should return false");
-telephoneCheck("0 (757) 622-7382");  
-
-console.log("-1 (757) 622-7382 should return false");
-telephoneCheck("-1 (757) 622-7382");  
-
-console.log("2 757 622-7382 should return false");
-telephoneCheck("2 757 622-7382"); 
-
-console.log("10 (757) 622-7382 should return false");
-telephoneCheck("10 (757) 622-7382"); 
-
-console.log("27576227382 should return false");
-telephoneCheck("27576227382");  
-
-console.log("(275)76227382 should return false");
-telephoneCheck("(275)76227382"); 
-
-console.log("2(757)6227382 should return false");
-telephoneCheck("2(757)6227382"); 
-
-console.log("2(757)622-7382 should return false");
-telephoneCheck("2(757)622-7382"); 
-
-console.log("555)-555-5555 should return false");
-telephoneCheck("555)-555-5555"); 
-
-console.log("(555-555-5555 should return false");
-telephoneCheck("(555-555-5555"); 
-
-console.log("(555)5(55?)-5555 should return false");
-telephoneCheck("(555)5(55?)-5555");
-*/

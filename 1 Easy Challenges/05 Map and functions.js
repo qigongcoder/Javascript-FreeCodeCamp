@@ -134,7 +134,3 @@ function createlist (item,index){
 }
 
 rating=watchList.map(createlist);
-
-
-console.log(rating); 
-

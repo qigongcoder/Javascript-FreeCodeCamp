@@ -29,8 +29,8 @@ function doStuff(str){
     return str7;
 }
 
-console.log(doStuff(Str1));
-console.log(doStuff(Str2));
-console.log(doStuff(Str3));
-console.log(doStuff(Str4));
-console.log(doStuff(Str5));
+doStuff(Str1);
+doStuff(Str2);
+doStuff(Str3);
+doStuff(Str4);
+doStuff(Str5);

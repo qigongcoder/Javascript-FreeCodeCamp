@@ -129,7 +129,6 @@ var watchList = [
 var averageRating;
 var numChris=0;
 
-
 function dostuff(acc, cur) {
   if(cur.Director=="Christopher Nolan"){
     numChris++;
@@ -141,5 +140,3 @@ function dostuff(acc, cur) {
 
 averageRating=watchList.reduce(dostuff,0);
 averageRating=averageRating/numChris;
-
-console.log(averageRating);

@@ -21,7 +21,7 @@ var bookList = [
 function add (bookList,bookName) {
     var locallist = JSON.parse(JSON.stringify(bookList));    
     locallist.push(bookName);    
-        return locallist;
+    return locallist;
 }
 
 function remove (bookList,bookName) {

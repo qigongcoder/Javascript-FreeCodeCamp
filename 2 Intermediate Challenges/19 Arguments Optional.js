@@ -31,17 +31,12 @@ function addTogether() {
   return argh;
 }
 
-console.log(addTogether(2, 3));
-//should return 5
+addTogether(2, 3);
 
-console.log(addTogether(2)(3));
-//should return 5
+addTogether(2)(3);
 
-console.log(addTogether("http://bit.ly/IqT6zt"));
-//should return undefined
+addTogether("http://bit.ly/IqT6zt");
 
-console.log(addTogether(2, "3"));
-//should return undefined
+addTogether(2, "3");
 
-console.log(addTogether(2)([3]));
-//should return undefined.
+addTogether(2)([3]);

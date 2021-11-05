@@ -17,8 +17,3 @@ function ascendingOrder(arr) {
 function ascendingOrder(arr) {
   return arr.sort((a,b)=>a - b);
 }
-
-
-console.log(ascendingOrder([1, 5, 2, 3, 4]));
-
-// Returns [1, 2, 3, 4, 5]

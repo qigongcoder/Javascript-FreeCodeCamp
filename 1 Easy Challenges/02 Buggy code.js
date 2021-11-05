@@ -26,9 +26,7 @@ Window.prototype.tabOpen = function (tab){
 
 Window.prototype.tabClose = function(index){
     var tabsBeforeIndex=this.tabs.splice(0,index);
-//second call to splice uses a modified array!!  
     var tabsAfterIndex = this.tabs.splice(index);
-
     this.tabs = tabsBeforeIndex.concat(tabsAfterIndex);
     return this;
 };
@@ -38,9 +36,3 @@ var socialWindow = new Window(['FB','Gitter','Reddit','Twitter','Medium']);
 var videoWindow = new Window(['Netflix','YouTube','Vimeo','Vine']);
 
 var finalTabs = socialWindow.tabOpen().join(videoWindow.tabClose(2)).join(workWindow.tabClose(1).tabOpen());
-
-alert(finalTabs.tabs);
-
-console.log(workWindow);
-console.log(socialWindow);
-console.log(videoWindow);

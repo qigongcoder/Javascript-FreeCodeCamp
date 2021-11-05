@@ -12,14 +12,11 @@ all numbers between 1 and 3. The answer here would be 6.
 let primeArray = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29];
 
 function smallestCommons(arr) {
-//makes sure first element is smallest    
     arr.sort((a,b)=>a-b);
 
-//array of values to be assessed
     let list=new Array(arr[1]-arr[0]+1);
     list=list.fill(0,0,list.length).map((x,i)=>x=i+arr[0]);
 
-//creates array of prime factors
     function primeFactors (num){
         let ans=[0,0,0,0,0,0,0,0,0,0];
         for(let i=0;i<primeArray.length;i++){
@@ -31,10 +28,8 @@ function smallestCommons(arr) {
         return ans;
     }
 
-//combines all prime factors into one array
     let allFactors=list.map(x=>primeFactors(x));
 
-//finds highest prime power
     let highPrime=[0,0,0,0,0,0,0,0,0,0];
     function highestP (value,index){
         let highP=0;
@@ -46,7 +41,6 @@ function smallestCommons(arr) {
         return highP;
     }
 
-//list of highest powers    
     highPrime=highPrime.map(highestP);
 
     function red(acc,cur,ind){
@@ -66,12 +60,7 @@ function smallestCommons(arr) {
 
 
 smallestCommons([1, 5]);
-//should return 60
 smallestCommons([5, 1]);
-//should return 60
 smallestCommons([2, 10]);
-//should return 2520.
 smallestCommons([1, 13]);
-//should return 360360
 smallestCommons([23, 18]);
-//should return 6056820

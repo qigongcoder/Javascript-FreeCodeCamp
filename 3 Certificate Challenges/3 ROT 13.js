@@ -8,7 +8,7 @@ All letters will be uppercase. Do not transform any non-alphabetic character
 (i.e. spaces, punctuation), but do pass them on.
 */
 
-function rot13(str) { // LBH QVQ VG!
+function rot13(str) {
 
   let  ans=str.split('').map((x,i)=>str.charCodeAt(i));
 
@@ -28,16 +28,10 @@ function rot13(str) { // LBH QVQ VG!
   return ans;
 }
 
-// Change the inputs below to test
-
 rot13("SERR PBQR PNZC");
-//FREE CODE CAMP
 
 rot13("SERR CVMMN!");
-//FREE PIZZA!
 
 rot13("SERR YBIR?");
-//FREE LOVE?
 
 rot13("GUR DHVPX OEBJA SBK WHZCF BIRE GUR YNML QBT.");
-//THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG.

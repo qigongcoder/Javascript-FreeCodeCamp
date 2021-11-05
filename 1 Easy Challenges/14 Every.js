@@ -9,9 +9,7 @@ checkPositive([1, -2, 3, -4, 5]) should return false.
 
 
 function checkPositive(arr) {
-  // Add your code below this line
-  return arr.every(x=>x>-1);
-  
-  // Add your code above this line
+    return arr.every(x=>x>-1);
 }
+
 checkPositive([1, 2, 3, -4, 5]);

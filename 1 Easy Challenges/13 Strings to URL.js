@@ -12,10 +12,8 @@ urlSlug("Hold The Door") should return "hold-the-door"
 // the global variable
 var globalTitle = "Winter Is Coming";
 
-// Add your code below this line
 function urlSlug(title) {
   return title.toLowerCase().split(' ').filter(x=>x!="").join('-');  
 }
-// Add your code above this line
 
-var winterComing = urlSlug(globalTitle); // Should be "winter-is-coming"
+var winterComing = urlSlug(globalTitle);

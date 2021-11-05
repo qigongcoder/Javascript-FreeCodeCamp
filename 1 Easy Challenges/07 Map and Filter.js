@@ -10,8 +10,6 @@ filteredList should equal [{"title": "Inception","rating": "8.8"},
 */
 
 
-
-
 // the global variable
 var watchList = [
                  {  
@@ -139,7 +137,5 @@ function greaterthan(item,index){
 }
 
 rating=watchList.map(createlist);
-console.log(rating);
 
 filteredList=rating.filter(greaterthan);
-console.log(filteredList);
