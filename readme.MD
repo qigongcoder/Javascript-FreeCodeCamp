@@ -4,7 +4,7 @@ Here are my 41 solutions to various challenges found in the Free Code Camp JavaS
 The link to the syllabus is here [https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/).
 
 
-## Easy Challenges
+## 1 Easy Challenges
 ### Functional Programming
 
 *'Functional Programming is another popular approach to software development. In Functional Programming, code is organized into smaller, basic functions that can be combined to build complex programs.*
@@ -13,14 +13,14 @@ The link to the syllabus is here [https://www.freecodecamp.org/learn/javascript-
 
 
 
-## Intermediate Challenges
+## 2 Intermediate Challenges
 ### Algorithm Scripting Challenges
 
 *'Now that you know the basics of algorithmic thinking and Functional Programming, test your skills with the Intermediate Algorithm Scripting challenges.'*
 
 
 
-## Certificate Challenges
+## 3 Certificate Challenges
 ### Algorithms and Data Structures Projects
  
 
